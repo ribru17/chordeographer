@@ -1,12 +1,13 @@
 {
   "expo": {
-    "name": "music-app",
+    "name": "Chordeographer",
     "slug": "music-app",
-    "version": "1.0.0",
+    "version": "1.0.1",
+    "owner": "ribru17",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
-      "image": "./assets/splash.png",
+      "image": "./assets/icon.png",
       "resizeMode": "contain",
       "backgroundColor": "#ffffff"
     },
@@ -17,13 +18,17 @@
       "**/*"
     ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.RBGames.ChordProgressions",
+      "buildNumber": "1.0.0"
     },
     "android": {
       "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
+        "foregroundImage": "./assets/icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "package": "com.RBGames.ChordProgressions",
+      "versionCode": 1
     },
     "web": {
       "favicon": "./assets/favicon.png"
