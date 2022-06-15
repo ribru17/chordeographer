@@ -4,31 +4,24 @@ import { Text, View, Image, ScrollView, Dimensions } from "react-native";
 import circleoffifths from '../assets/circleoffifths.png'
 import { SafeAreaView } from 'react-native-safe-area-context';
 
-export default function MoreInfo({ navigation }) {
+export default function MoreInfo() {
 
     return (
         <SafeAreaView style={{
             flex: 1,
             alignItems: 'center',
-            //padding: '5%'
         }}>
             <StatusBar style="auto" hidden />
-            <ScrollView style={{
-                //padding: '5%',
-            }} contentContainerStyle={{
-                //padding: '5%',
-                //flex: 1,
+            <ScrollView contentContainerStyle={{
                 alignItems: 'center'
             }}>
                 <Image source={circleoffifths} style={{
                     height: Dimensions.get('screen').width * 0.6, //60% of the width
                     aspectRatio: 1,
                     marginTop: '5%',
-                    //paddingHorizontal: '5%'
                 }} />
                 <Text style={{
                     fontSize: 20,
-                    //marginVertical: '5%',
                     padding: '5%'
                 }}>{'\tTry it yourself! The picture above is called the circle of fifths. It can be used to find chords that sound nice together for a given key. Simply choose a key (C for example) and locate its wedge on the circle. The outer clockwise wedge (G) is the V chord. The outer counterclockwise wedge (F) is the IV chord. The inner wedge (Am) is the vi chord. The inner clockwise wedge (Em) is the iii chord. Lastly, the inner counterclockwise wedge (Dm) is the ii chord. These rules apply to any key you choose!'}</Text>
                 <Text style={{fontWeight: 'bold', fontSize: 20, alignSelf: 'flex-start', paddingHorizontal: '5%'}}>TIP:</Text> 
@@ -55,11 +48,6 @@ export default function MoreInfo({ navigation }) {
                     <Text style={{flex: 1, textAlign: 'center', fontSize: 20, fontWeight: 'bold'}}>IV</Text>
                     <Text style={{flex: 1, textAlign: 'center', fontSize: 20, fontWeight: 'bold'}}>V</Text>
                     <Text style={{flex: 1, textAlign: 'center', fontSize: 20, fontWeight: 'bold'}}>vi</Text>
-                    {/* <Text style={{flex: 1, textAlign: 'center', fontSize: 20, fontWeight: 'bold'}}>VII</Text> */}
-                    {/* <View style={{flex: 1, flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'center'}}>
-                        <Text style={{fontSize: 20, textAlign: 'center', fontWeight: 'bold',}}>vii</Text>
-                        <Text style={{fontSize: 11, lineHeight: 18, textAlign: 'center', fontWeight: 'bold',}}>o</Text>
-                    </View> */}
                 </View>
                 <View style={{
                     flexDirection: 'row',
@@ -73,11 +61,6 @@ export default function MoreInfo({ navigation }) {
                     <Text style={{flex: 1, textAlign: 'center', fontSize: 20,}}>F</Text>
                     <Text style={{flex: 1, textAlign: 'center', fontSize: 20,}}>G</Text>
                     <Text style={{flex: 1, textAlign: 'center', fontSize: 20,}}>Am</Text>
-                    {/* <Text style={{flex: 1, textAlign: 'center', fontSize: 20,}}>B</Text> */}
-                    {/* <View style={{flex: 1, flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'center'}}>
-                        <Text style={{fontSize: 20, textAlign: 'center',}}>B</Text>
-                        <Text style={{fontSize: 11, lineHeight: 18, textAlign: 'center',}}>o</Text>
-                    </View> */}
                 </View>
                 <View style={{
                     flexDirection: 'row',
@@ -91,11 +74,6 @@ export default function MoreInfo({ navigation }) {
                     <Text style={{flex: 1, textAlign: 'center', fontSize: 20,}}>G♭</Text>
                     <Text style={{flex: 1, textAlign: 'center', fontSize: 20,}}>A♭</Text>
                     <Text style={{flex: 1, textAlign: 'center', fontSize: 20,}}>B♭m</Text>
-                    {/* <Text style={{flex: 1, textAlign: 'center', fontSize: 20,}}>C</Text> */}
-                    {/* <View style={{flex: 1, flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'center'}}>
-                        <Text style={{fontSize: 20, textAlign: 'center',}}>C</Text>
-                        <Text style={{fontSize: 11, lineHeight: 18, textAlign: 'center',}}>o</Text>
-                    </View> */}
                 </View>
                 <View style={{
                     flexDirection: 'row',
@@ -109,11 +87,6 @@ export default function MoreInfo({ navigation }) {
                     <Text style={{flex: 1, textAlign: 'center', fontSize: 20,}}>G</Text>
                     <Text style={{flex: 1, textAlign: 'center', fontSize: 20,}}>A</Text>
                     <Text style={{flex: 1, textAlign: 'center', fontSize: 20,}}>Bm</Text>
-                    {/* <Text style={{flex: 1, textAlign: 'center', fontSize: 20,}}>C♯</Text> */}
-                    {/* <View style={{flex: 1, flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'center'}}>
-                        <Text style={{fontSize: 20, textAlign: 'center',}}>C♯</Text>
-                        <Text style={{fontSize: 11, lineHeight: 18, textAlign: 'center',}}>o</Text>
-                    </View> */}
                 </View>
                 <View style={{
                     flexDirection: 'row',
@@ -127,11 +100,6 @@ export default function MoreInfo({ navigation }) {
                     <Text style={{flex: 1, textAlign: 'center', fontSize: 20,}}>A♭</Text>
                     <Text style={{flex: 1, textAlign: 'center', fontSize: 20,}}>B♭</Text>
                     <Text style={{flex: 1, textAlign: 'center', fontSize: 20,}}>Cm</Text>
-                    {/* <Text style={{flex: 1, textAlign: 'center', fontSize: 20,}}>D</Text> */}
-                    {/* <View style={{flex: 1, flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'center'}}>
-                        <Text style={{fontSize: 20, textAlign: 'center',}}>D</Text>
-                        <Text style={{fontSize: 11, lineHeight: 18, textAlign: 'center',}}>o</Text>
-                    </View> */}
                 </View>
                 <View style={{
                     flexDirection: 'row',
@@ -145,11 +113,6 @@ export default function MoreInfo({ navigation }) {
                     <Text style={{flex: 1, textAlign: 'center', fontSize: 20,}}>A</Text>
                     <Text style={{flex: 1, textAlign: 'center', fontSize: 20,}}>B</Text>
                     <Text style={{flex: 1, textAlign: 'center', fontSize: 20,}}>C♯m</Text>
-                    {/* <Text style={{flex: 1, textAlign: 'center', fontSize: 20,}}>D♯</Text> */}
-                    {/* <View style={{flex: 1, flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'center'}}>
-                        <Text style={{fontSize: 20, textAlign: 'center',}}>D♯</Text>
-                        <Text style={{fontSize: 11, lineHeight: 18, textAlign: 'center',}}>o</Text>
-                    </View> */}
                 </View>
                 <View style={{
                     flexDirection: 'row',
@@ -163,11 +126,6 @@ export default function MoreInfo({ navigation }) {
                     <Text style={{flex: 1, textAlign: 'center', fontSize: 20,}}>B♭</Text>
                     <Text style={{flex: 1, textAlign: 'center', fontSize: 20,}}>C</Text>
                     <Text style={{flex: 1, textAlign: 'center', fontSize: 20,}}>Dm</Text>
-                    {/* <Text style={{flex: 1, textAlign: 'center', fontSize: 20,}}>E</Text> */}
-                    {/* <View style={{flex: 1, flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'center'}}>
-                        <Text style={{fontSize: 20, textAlign: 'center',}}>E</Text>
-                        <Text style={{fontSize: 11, lineHeight: 18, textAlign: 'center',}}>o</Text>
-                    </View> */}
                 </View>
                 <View style={{
                     flexDirection: 'row',
@@ -181,11 +139,6 @@ export default function MoreInfo({ navigation }) {
                     <Text style={{flex: 1, textAlign: 'center', fontSize: 20,}}>B</Text>
                     <Text style={{flex: 1, textAlign: 'center', fontSize: 20,}}>C♯</Text>
                     <Text style={{flex: 1, textAlign: 'center', fontSize: 20,}}>D♯m</Text>
-                    {/* <Text style={{flex: 1, textAlign: 'center', fontSize: 20,}}>E♯</Text> */}
-                    {/* <View style={{flex: 1, flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'center'}}>
-                        <Text style={{fontSize: 20, textAlign: 'center',}}>E♯</Text>
-                        <Text style={{fontSize: 11, lineHeight: 18, textAlign: 'center',}}>o</Text>
-                    </View> */}
                 </View>
                 <View style={{
                     flexDirection: 'row',
@@ -199,11 +152,6 @@ export default function MoreInfo({ navigation }) {
                     <Text style={{flex: 1, textAlign: 'center', fontSize: 20,}}>C</Text>
                     <Text style={{flex: 1, textAlign: 'center', fontSize: 20,}}>D</Text>
                     <Text style={{flex: 1, textAlign: 'center', fontSize: 20,}}>Em</Text>
-                    {/* <Text style={{flex: 1, textAlign: 'center', fontSize: 20,}}>F♯</Text> */}
-                    {/* <View style={{flex: 1, flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'center'}}>
-                        <Text style={{fontSize: 20, textAlign: 'center',}}>F♯</Text>
-                        <Text style={{fontSize: 11, lineHeight: 18, textAlign: 'center',}}>o</Text>
-                    </View> */}
                 </View>
                 <View style={{
                     flexDirection: 'row',
@@ -217,11 +165,6 @@ export default function MoreInfo({ navigation }) {
                     <Text style={{flex: 1, textAlign: 'center', fontSize: 20,}}>D♭</Text>
                     <Text style={{flex: 1, textAlign: 'center', fontSize: 20,}}>E♭</Text>
                     <Text style={{flex: 1, textAlign: 'center', fontSize: 20,}}>Fm</Text>
-                    {/* <Text style={{flex: 1, textAlign: 'center', fontSize: 20,}}>G</Text> */}
-                    {/* <View style={{flex: 1, flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'center'}}>
-                        <Text style={{fontSize: 20, textAlign: 'center',}}>G</Text>
-                        <Text style={{fontSize: 11, lineHeight: 18, textAlign: 'center',}}>o</Text>
-                    </View> */}
                 </View>
                 <View style={{
                     flexDirection: 'row',
@@ -235,11 +178,6 @@ export default function MoreInfo({ navigation }) {
                     <Text style={{flex: 1, textAlign: 'center', fontSize: 20,}}>D</Text>
                     <Text style={{flex: 1, textAlign: 'center', fontSize: 20,}}>E</Text>
                     <Text style={{flex: 1, textAlign: 'center', fontSize: 20,}}>F♯m</Text>
-                    {/* <Text style={{flex: 1, textAlign: 'center', fontSize: 20,}}>G♯</Text> */}
-                    {/* <View style={{flex: 1, flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'center'}}>
-                        <Text style={{fontSize: 20, textAlign: 'center',}}>G♯</Text>
-                        <Text style={{fontSize: 11, lineHeight: 18, textAlign: 'center',}}>o</Text>
-                    </View> */}
                 </View>
                 <View style={{
                     flexDirection: 'row',
@@ -253,11 +191,6 @@ export default function MoreInfo({ navigation }) {
                     <Text style={{flex: 1, textAlign: 'center', fontSize: 20,}}>E♭</Text>
                     <Text style={{flex: 1, textAlign: 'center', fontSize: 20,}}>F</Text>
                     <Text style={{flex: 1, textAlign: 'center', fontSize: 20,}}>Gm</Text>
-                    {/* <Text style={{flex: 1, textAlign: 'center', fontSize: 20,}}>A</Text> */}
-                    {/* <View style={{flex: 1, flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'center'}}>
-                        <Text style={{fontSize: 20, textAlign: 'center',}}>A</Text>
-                        <Text style={{fontSize: 11, lineHeight: 18, textAlign: 'center',}}>o</Text>
-                    </View> */}
                 </View>
                 <View style={{
                     flexDirection: 'row',
@@ -271,11 +204,6 @@ export default function MoreInfo({ navigation }) {
                     <Text style={{flex: 1, textAlign: 'center', fontSize: 20,}}>E</Text>
                     <Text style={{flex: 1, textAlign: 'center', fontSize: 20,}}>F♯</Text>
                     <Text style={{flex: 1, textAlign: 'center', fontSize: 20,}}>G♯m</Text>
-                    {/* <Text style={{flex: 1, textAlign: 'center', fontSize: 20,}}>A♯</Text> */}
-                    {/* <View style={{flex: 1, flexDirection: 'row', alignItems: 'flex-start', justifyContent: 'center'}}>
-                        <Text style={{fontSize: 20, textAlign: 'center',}}>A♯</Text>
-                        <Text style={{fontSize: 11, lineHeight: 18, textAlign: 'center',}}>o</Text>
-                    </View> */}
                 </View>
                 <Text style={{
                     fontSize: 20,

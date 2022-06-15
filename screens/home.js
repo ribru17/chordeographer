@@ -4,59 +4,13 @@ import { Text, View, TextInput, Button } from "react-native";
 import { globalStyles } from "../styles/globalStyles";
 import ModalSelector from 'react-native-modal-selector'
 import { SafeAreaView } from 'react-native-safe-area-context';
-
+import { majorKeys, minorKeys, majorKeysFlatted } from "../constants";
 
 export default function Home({ navigation }) {
 
     const [currentIndex, setCurrentIndex] = useState(9)
     const [keyValue, setKeyValue] = useState()
     const [chordProg, setChordProg] = useState(null)
-    //const [bottomHeight, setBottomHeight] = useState(0)
-
-    const majorKeys = [
-        "A",
-        "E",
-        "B",
-        "G♭",
-        "D♭",
-        "A♭",
-        "E♭",
-        "B♭",
-        "F",
-        "C",
-        "G",
-        "D",
-    ]
-
-    const minorKeys = [
-        "F♯m",
-        "C♯m",
-        "G♯m",
-        "E♭m",
-        "B♭m",
-        "Fm",
-        "Cm",
-        "Gm",
-        "Dm",
-        "Am",
-        "Em",
-        "Bm",
-    ]
-
-    const majorKeysFlatted = [
-        "A♭",
-        "E♭",
-        "B♭",
-        "F",
-        "C",
-        "G",
-        "D",
-        "A",
-        "E",
-        "B",
-        "G♭",
-        "D♭",
-    ]
 
     const numerals = {
         'I': majorKeys[currentIndex],
@@ -150,7 +104,6 @@ export default function Home({ navigation }) {
             } else {
                 prog = temp.concat(prog)
             }
-            //setChordProg(chordProgString)
             setChordProg(prog)
             return
         }
@@ -183,14 +136,6 @@ export default function Home({ navigation }) {
         <>
             <SafeAreaView style={globalStyles.container}>
                 <StatusBar style="auto" hidden />
-                {
-                // <View style={{
-                //     paddingBottom: '3%'
-                // }}>
-                //     <Button title="Find BPM" onPress={() => {navigation.navigate("BPMFinder")}} />
-                //     <Button title="Metronome" onPress={() => {navigation.navigate("Metronome")}} />
-                // </View>
-                }
                 <Text style={{
                     fontSize: 22,
                     fontWeight: 'bold',
@@ -306,16 +251,6 @@ export default function Home({ navigation }) {
                         borderWidth: 1, borderColor: '#000', padding: 10, borderRadius: 5, fontSize: 18, fontWeight: 'bold', backgroundColor: '#93E9BE'
                     }} placeholderTextColor={'black'} value={renderChordProg()} />
                 </ModalSelector>
-                {/*
-                <View style={{
-                    backgroundColor: 'pink',
-                    height: '10%',
-                    width: '100%',
-                    position: 'absolute',
-                    bottom: 0
-                }}>
-                    
-                </View>*/}
                 <Button title="More Info" onPress={() => {navigation.navigate('MoreInfo')}} />
             </SafeAreaView>
         </>
